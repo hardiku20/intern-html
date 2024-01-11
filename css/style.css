@@ -87,6 +87,11 @@ body{
     border: none;
 }
 
+.logs .login-btn a{
+    text-decoration: none;
+    color: white;
+}
+
 .logs .forgot-btn{
     float: right;
     width: 121px;
