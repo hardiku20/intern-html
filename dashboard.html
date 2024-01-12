@@ -15,7 +15,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <div class="align-left">
+                <div class="align-left ms-4">
                     <img src="images/menu-bar.svg" class="menu-bar" alt=""></img>
                     <img src="images/logo.svg" class="logo" alt=""></img>
                     <img src="images/search-icon.svg" class="search-icon" alt=""></img>
@@ -34,31 +34,35 @@
     <div class="sidebar">
 
         <ul class="sidebar-menu ">
-            <li class="sidebar-items items-1 ">
-                <img src="images/dashboard-default.svg" class="item-img">
-                <a href="#" class="item item-a">Dashboard</a>
+            <li class="sidebar-items d-flex align-items-center items-1 ">
+                <div class="px-3">
+                    <img src="images/dashboard-default.svg" class="item-img">
+                    <a href="#" class="item item-a">Dashboard</a>
+                </div>
             </li>
-            <li class="sidebar-items">
+            <li class="sidebar-items px-3">
+               <div class="d-flex contain">
                 <img src="images/graph-default.svg" alt="">
-                <a href="#" class="item">Analysis</a>
+                <a href="./innerpaqe.html" class="item">Analysis</a>
+               </div>
             </li>
-            <li class="sidebar-items">
+            <li class="sidebar-items px-3">
                 <img src="images/inbox-default.svg" alt="">
                 <a href="#" class="item">Inbox</a>
             </li>
-            <li class="sidebar-items">
+            <li class="sidebar-items px-3">
                 <img src="images/clock-default.svg" alt="">
                 <a href="#" class="item">History</a>
             </li>
-            <li class="sidebar-items">
+            <li class="sidebar-items px-3">
                 <img src="images/user-default.svg" alt="">
                 <a href="#" class="item">Users</a>
             </li>
-            <li class="sidebar-items">
+            <li class="sidebar-items px-3">
                 <img src="images/maintenance-default.svg" alt="">
                 <a href="#" class="item">Maintainence</a>
             </li>
-            <li class="sidebar-items">
+            <li class="sidebar-items px-3">
                 <img src="images/setting-default.svg" alt="">
                 <a href="#" class="item">Settings</a>
             </li>
@@ -69,8 +73,8 @@
 
     <div class="container-1">
         <h2 class="dash-txt">Dashboard</h2>
-        <div class="row">
-            <div class="col-sm-2">
+        <div class="row value">
+            <div class="col-sm-2 justify-content-between me-5 ">
                 <div class="d-flex">
                     <img src="images/star.svg" alt="">
                     <div class="details">
@@ -79,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 justify-content-between me-5">
                 <div class="d-flex">
                     <img src="images/star.svg" alt="">
                     <div class="details">
@@ -88,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 justify-content-between me-5">
                 <div class="d-flex">
                     <img src="images/star.svg" alt="">
                     <div class="details">
@@ -97,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 justify-content-between me-5">
                 <div class="d-flex">
                     <img src="images/star.svg" alt="">
                     <div class="details">
@@ -106,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 justify-content-between me-5">
                 <div class="d-flex">
                     <img src="images/star.svg" alt="">
                     <div class="details">
@@ -117,32 +121,143 @@
             </div>
         </div>
 
-        <div class="row charts">
-            <div class="col-sm-7">
+        <div class="row charts mt-2 ms-4">
+            <div class="col-sm-8 graph-block ">
                 <h3 class="sale">Sale</h3>
                 <ul class="nav nav-underline dates">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Weekly</a>
+                        <a class="nav-link" href="#">Weekly</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Monthly</a>
+                        <a class="nav-link" href="#">Monthly</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Yearly</a>
-                      </li>
-                  </ul>
-                  <img src="images/data-graph.png" alt="" class="data-img">
+                    </li>
+                </ul>
+                <img src="images/data-graph.png" alt="" class="data-img" width="95%">
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3  ms-5 pie-block ">
                 <h3 class="sales">Sales by Country</h3>
-                <img src="images/pie-chart.svg" alt="" class="pie">
-
+                <img src="images/pie-chart.svg" alt="" class="pie mx-4">
+                <div class="row-2">
+                    <div class="d-flex">
+                        <div class="col-sm-6  d-flex ">
+                            <div class="circle " style="background:#C8242F;"></div>
+                            <p class="country-name me-2">United states of America </p>
+                        </div>
+                        <div class="col-sm-6 d-flex">
+                            <div class="circle me-2 " style="background: #A2B86C;"></div>
+                            <p class="country-name">Canada</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-sm-6  d-flex">
+                            <div class="circle me-2 " style="background: #F16C20;"></div>
+                            <p class="country-name">Russia</p>
+                        </div>
+                        <div class="col-sm-6  d-flex">
+                            <div class="circle me-2 " style="background: #EBC844;"></div>
+                            <p class="country-name">India</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+
+        </div>
+        <div class="row mt-5 ms-4 table-data">
+            <table class="table caption-top data-list">
+                <caption>Invoices</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">INVOICE</th>
+                        <th scope="col">COMPANY NAME</th>
+                        <th scope="col">EMAIL</th>
+                        <th scope="col">DUE DATE</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">AMOUNT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <td>651535</td>
+                        <td>public adjusting firm</td>
+                        <td>gorgeia.young@emaple.com</td>
+                        <td>24 May,2020</td>
+                        <td>paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </div>
 
-   
 
 </body>
 
