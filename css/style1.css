@@ -30,7 +30,6 @@ header {
 }
 
 .logo {
-    width: 142px;
     height: 30px;
     opacity: 1;
     align-items: center;
@@ -117,7 +116,7 @@ header {
 
 
 .sidebar {
-
+    display: flex;
     margin-left: 0px;
     width: 15%;
     height: 1279px;
@@ -177,14 +176,14 @@ header {
 }
 
 .charts .graph-block {
-    margin-top: 30px;
+  
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;
 }
 
 .charts .pie-block {
-    margin-top: 30px;
+  
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;
@@ -259,4 +258,123 @@ header {
     letter-spacing: 0px;
     color: #3E3E3E;
     opacity: 1;
+}
+
+#close-btn{
+    display: none;
+}
+
+
+@media screen and (max-width: 1460px) {
+    .sidebar{
+        display: none;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color:white;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+        width: 250px;
+        
+    }
+
+    
+.container-1 {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1359px;
+    /* UI Properties */
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    
+}
+
+#close-btn{
+    display: flex;
+    background:#FFF3F4;
+    padding: 10px;
+   padding-left: 50px;
+}
+
+   
+}
+
+
+@media screen and (max-width:770px) {
+   
+
+
+
+
+    .logo {
+        width: 100px;
+        height: 30px;
+        opacity: 1;
+        align-items: center;
+    }
+    
+    .search-icon {
+        margin-left: 20px;
+        width: 16px;
+        height: 16px;
+        background: none 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    .profile {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .search {
+        border: none;
+        background: none;
+        text-align: left;
+        font: normal normal normal 16px/21px Roboto;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .notification-icon {
+        margin-right: 10px;
+        width: 20px;
+    }
+    
+    .profile-pt {
+        margin-right: 5px;
+    }
+    
+    .profile {
+        margin-right: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+    .charts{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-data{
+        width: 85%;
+    }
+    
+   
+}
+
+@media screen and (max-width: 680px) {
+    .charts{
+        width: 100%;
+    }
+
+    .table-data{
+        width: 75%;
+    }
+    
+   
 }

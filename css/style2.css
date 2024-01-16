@@ -1,18 +1,65 @@
-.container-2 {
+body {
     margin-top: 0px;
     margin-left: 0px;
     background: #FAFAFA 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
+header {
+    margin-top: 0px;
+    margin-left: 0px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
 
-  
+
+.container-2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 85%;
+    float: right;
+}
+
+
+
+
+.navbar {
+    width: 100%;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.menu-bar {
+    background: none 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.logo {
+    width: 142px;
+    height: 30px;
+    opacity: 1;
+    align-items: center;
+}
 
 .search-icon {
+    margin-left: 90px;
     width: 16px;
     height: 16px;
     background: none 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+
+.profile {
+    text-decoration: none;
+    color: black;
 }
 
 .search {
@@ -25,16 +72,23 @@
     opacity: 1;
 }
 
-.profile {
-    text-decoration: none;
-    color: black;
+.notification-icon {
+    margin-right: 50px;
 }
 
-.field-1{
+.profile-pt {
+    margin-right: 10px;
+}
+
+.profile {
+    margin-right: 10px;
+}
+
+.field-1 {
     position: relative;
 }
 
-.field-1 legend{
+.field-1 legend {
     position: absolute;
     font-size: 12px;
     margin-left: 20px;
@@ -48,19 +102,36 @@
     opacity: 1;
 }
 
-.tabs :hover{
-    text-decoration: underline solid 2px red;
- 
-
-}
-
-.head{
-   font-size: 1.5rem;
+.tabs .nav-item .nav-link:hover {
+    color: red;
+    opacity: 1;
 }
 
 
 
-.icon{
+.under-act {
+    position: relative;
+    text-decoration: none;
+    border-bottom: none;
+    color: white;
+}
+
+.under-act:hover {
+    border-bottom: red 3px solid;
+}
+
+
+.head {
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+
+
+.icon {
     height: 20px;
     width: 20px;
 }
@@ -115,3 +186,67 @@
     width: 183px;
     height: 43px;
 }
+
+
+#close-btn {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1460px) {
+    .sidebar {
+        display: none;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+        width: 250px;
+
+    }
+
+    #close-btn {
+        display: flex;
+        background: #FFF3F4;
+        padding: 10px;
+        padding-left: 50px;
+    }
+
+    .container-2 {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (min-width:792px) {
+    .menu-bar{
+        height: 20px;
+        width: 20px;
+    }
+    .logo{
+        width: 100px ;
+        height: 100px;
+    }
+    .profile{
+        visibility: hidden;
+        position: fixed;
+        margin-top: 20px;
+    }
+    .profile-pt{
+        height: 20px;
+        width: 20px;
+    }
+    .notification-icon{
+        float: none;
+        margin-right: 0px;
+        height: 20px;
+        width: 20px;
+
+    }
+}
+
+
